@@ -86,6 +86,6 @@ export const SITE_CONTENT = {
       address: "123 MUTHAIGA RD \n NAIROBI, KENYA",
       phone: "+254 712 345 678"
     },
-    copyright: "© 2024 THE NEON BLACKSMITH. PRECISION FORGED."
+    copyright: `© ${new Date().getFullYear()} THE NEON BLACKSMITH. PRECISION FORGED.`
   }
 };

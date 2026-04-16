@@ -5,7 +5,6 @@ import { AnimatePresence } from 'framer-motion';
 import { GlassNavbar } from './components/ui/GlassNavbar';
 import { GrainOverlay } from './components/ui/GrainOverlay';
 import { Footer } from './components/home/Footer';
-import { StickyBooking } from './components/ui/StickyBooking';
 import { ExitIntentPopup } from './components/ui/ExitIntentPopup';
 
 import { Home } from './pages/Home';
@@ -38,7 +37,6 @@ function Application() {
       {/* Floating Elements (Not shown on booking page to avoid distraction) */}
       {location.pathname !== '/booking' && (
         <>
-          <StickyBooking />
           <ExitIntentPopup />
         </>
       )}

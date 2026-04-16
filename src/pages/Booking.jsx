@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -34,6 +35,7 @@ const customerSchema = z.object({
 });
 
 export function Booking() {
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [bookingData, setBookingData] = useState({
     serviceId: '',
@@ -229,7 +231,7 @@ export function Booking() {
                 <span className="text-2xl font-epilogue font-bold text-[#e9c349] tracking-widest">{reference}</span>
               </div>
               <div>
-                <Button onClick={() => window.location.href = '/'} variant="secondary">RETURN TO MAIN</Button>
+                <Button onClick={() => navigate('/')} variant="secondary">RETURN TO MAIN</Button>
               </div>
             </motion.div>
           )}

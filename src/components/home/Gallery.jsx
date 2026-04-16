@@ -20,10 +20,10 @@ export function Gallery() {
               key={item.id} 
               className="group cursor-pointer relative overflow-hidden aspect-[4/3] rounded-sm bg-[#1c1b1b]"
             >
-              <img src={item.imageUrl} alt="Gallery view" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal" />
+              <img src={item.imageUrl} alt="Gallery view" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-active:scale-105 opacity-80 mix-blend-luminosity group-hover:mix-blend-normal group-active:mix-blend-normal" />
               
-              {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-[#131313]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              {/* Overlay on hover/touch */}
+              <div className="absolute inset-0 bg-[#131313]/60 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                  <span className="text-[#e9c349] font-epilogue font-bold uppercase tracking-widest text-sm border border-[#e9c349] px-4 py-2">
                    View Image
                  </span>

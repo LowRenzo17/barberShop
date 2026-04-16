@@ -50,8 +50,8 @@ export function EliteAccess() {
             className="relative"
           >
             {/* Image Placeholder with gradient mapped to design */}
-            <div className="aspect-square bg-[#1c1b1b] rounded-tl-[4rem] relative overflow-hidden shadow-2xl group">
-              <img src={SITE_CONTENT.membership.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-700" />
+            <div className="aspect-square bg-[#1c1b1b] rounded-tl-[4rem] relative overflow-hidden shadow-2xl group cursor-pointer">
+              <img src={SITE_CONTENT.membership.image} alt="" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity group-hover:mix-blend-normal group-active:mix-blend-normal transition-all duration-700 group-hover:scale-105 group-active:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#131313] via-transparent to-transparent opacity-90" />
               <div className="absolute inset-6 border border-[#e9c349]/20 rounded-tl-[3.5rem] flex items-end justify-end p-8 flex-col gap-4 pointer-events-none z-10 transition-colors group-hover:border-[#e9c349]/40">
                 <div className="w-auto h-auto px-8 py-4 rounded-full bg-[#1c1b1b]/95 backdrop-blur-md border border-[#e9c349] flex items-center justify-center shadow-[0_10px_40px_rgba(233,195,73,0.15)]">

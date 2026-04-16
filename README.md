@@ -1,16 +1,38 @@
-# React + Vite
+# The Neon Blacksmith
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, fully responsive barbershop storefront showcasing an intricate **Industrial-Vintage** design aesthetic. Functionally adapted for the Nairobi market, integrating robust frontend mechanisms spanning smooth routing, custom glass-morphic UI paradigms, and complex interaction tracking.
 
-Currently, two official plugins are available:
+## Technical Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*   **Framework**: React (Functional Components) + Vite
+*   **Styling**: Tailwind CSS (v4) + Custom CSS Variables + `@theme` mapping
+*   **Routing**: React Router DOM (v6)
+*   **Animations**: Framer Motion
+*   **Form Management & Validation**: React Hook Form + Zod
+*   **Icons**: Lucide React
 
-## React Compiler
+## Key System Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Industrial Aesthetic**: Custom CSS module structuring enforcing strict color constraints (brass `#e9c349` primaries, true-grain `#131313` darks, omitting pure white or blacks) alongside global static grain overlays blending utilizing `mix-blend-luminosity`.
+*   **Complex Booking Wizard**: A custom multi-stage UI funnel capturing service selections, dates, times, and patron identification validated synchronously utilizing `Zod`. Persists payload securely utilizing `localStorage` to emulate state bridging.
+*   **Immersive Micro-interactions**: Scroll-reveal rendering via `framer-motion`, adaptive exit-intent sensing widgets, and dynamically scaled components gracefully handling strict structural bounds across microscopic mobile arrays and massive desktop visors.
+*   **Asymmetrical Architectures**: Implements sophisticated radius rendering logic simulating raw metal corners against organic curves natively without overriding heavy third-party UI libraries.
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+Ensure that you are running Node.js (v18 or higher recommended). Execute inside the project root:
+
+```bash
+# Install package dependencies
+npm install
+
+# Start the local development server utilizing Vite HMR
+npm run dev
+
+# Compile the application for production deployment
+npm run build
+```
+
+## Structure
+All UI component segments reside cleanly within `src/components/`, while `src/pages/` orchestrates top-level routing compositions. Heavy constant-mapping arrays powering service lists and location data operate agnostically through `src/content.js`.
